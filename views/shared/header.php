@@ -13,7 +13,8 @@
 	<body>
 <?php require_once "svg-iconset.php"; ?>
 <nav class="site-nav">
-	<section class="row">
+	<span class="mobi-menu">Menu</span>
+	<section class="row menu-row">
 		<!-- Left Nav Section -->
 	    <ul class="site-left-nav">
 	      <li><a href="/">Home</a></li>
