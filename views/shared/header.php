@@ -8,7 +8,7 @@
 		<title>ORG-Websites <?= $data['title'] ?> | Websites for non-profit foundations and orginizations.</title>
 
 		<link rel="stylesheet" href="<?= ASSETS ?>css/app.css" />
-		<script src="<?= ASSETS ?>bower_components/modernizr/modernizr.js"></script>
+		<script src="<?= ASSETS ?>js/modernizr.min.js"></script>
 	</head>
 	<body>
 <?php require_once "svg-iconset.php"; ?>

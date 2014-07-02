@@ -8,9 +8,7 @@
 		</div>
 	</div>
 </footer>
-
-    <script src="<?= ASSETS ?>bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?= ASSETS ?>bower_components/foundation/js/foundation.min.js"></script>
+    <script src="<?= ASSETS ?>js/base.min.js"></script>
     <script src="<?= ASSETS ?>js/app.js"></script>
   </body>
 </html>

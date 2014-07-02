@@ -16,6 +16,15 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      my_target: {
+        files: {
+          'js/base.min.js': ['bower_components/jquery/dist/jquery.min.js', 'bower_components/foundation/js/foundation.min.js'],
+          'js/modernizr.min.js' : ['bower_components/modernizr/modernizr.js']
+        }
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -28,7 +37,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'uglify']);
   grunt.registerTask('default', ['build','watch']);
 }
