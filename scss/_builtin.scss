@@ -1,0 +1,24 @@
+.built-in {
+	padding: 2em 0;
+
+	.glyphicon {
+		font-size: 4em;
+		padding-top: 0.5em;
+		color: $primary-color;
+	}
+	.glyphwrap {
+		text-align: center;
+	}
+	@media #{$medium-up} {
+		.glyphwrap {
+			text-align: right;
+		}	
+	}
+	h2 {
+		color: $primary-color;
+		text-align: center;
+		@media #{$medium-up} {
+			text-align: left;
+		}
+	}
+}

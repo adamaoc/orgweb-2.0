@@ -1,0 +1,45 @@
+.workslist {
+	padding: 2em 0;
+	article {
+		padding: 1em;
+		a {
+			display: block;
+			border: 1px solid #333;
+			border-bottom: 4px solid #333;
+			padding: 1em;
+			color: #333;
+		}
+		h3 {
+			color: inherit;
+		}
+		.img-wrap {
+			h5 {
+				display: inline;
+			}
+		}
+		.row {
+			margin: 0;
+		}
+		.datetime {
+			font-size: 0.8em;
+			color: #6a6a6a;
+			font-style: italic;
+			display: block;
+		}
+	}
+	.pricing-row a {
+		background: $primary-color;
+		color: #fff;
+		.glyphicon {
+			font-size: 4em;
+			padding-top: 0.5em;
+		}
+	}
+}
+
+.work-wrap {
+	padding: 2em 0;
+	.backlink {
+		padding-top: 1em;
+	}
+}

@@ -1,0 +1,131 @@
+.home-banner {
+	background: 
+    /* top, transparent teal */ 
+    linear-gradient(
+      rgba(0, 128, 128, 0.35), 
+      rgba(0, 128, 128, 0.45)
+    ),
+    /* bottom, image */
+    url(http://flexhub.ampnetmedia.com/api/org-websites/wp-content/uploads/sites/2/2014/07/org-banner-rolling-hills.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-color: lighten(teal, 3%);
+	color: #fff;
+	padding: 5em 0.5em;
+	.site-heading {
+		@include grid-column(12);
+		color: inherit;
+		text-align: center;
+		text-shadow: 1px 2px 8px #333;
+		.glyphicon {
+			color: lighten(teal, 15%);
+			text-shadow: 1px 2px 8px #333;
+		}
+	}
+	.slogan {
+		color: inherit;
+		letter-spacing: 1.1px;
+		text-align: center;
+		font-size: 1.4em;
+		font-weight: 100;
+		text-shadow: 1px 2px 8px #333;
+		max-width: 16em;
+		margin: 0 auto;
+		display: block;
+	}
+}
+@media #{$medium-up} {
+	.home-banner {
+		padding: 10em 2em;
+	}
+}
+
+
+.enticement {
+	padding: 2em 1em;
+	.details {
+		@include grid-column(12);
+	}
+	.listed-enticements {
+		margin: 0;
+		li {
+			@include grid-column(6);
+			padding: 1em;
+			p {
+				@extend .show-for-medium-up;
+			}
+			> a {
+				display: block;
+				text-align: center;
+			}
+			.icon-wrap {
+				text-align: center;
+				.glyphicon {
+					font-size: 4em;
+				}
+			}
+		}
+	}
+}
+@media #{$large-up} {
+	.enticement {
+		padding: 3em;
+		.details {
+			@include grid-column($columns: 8, $center: true);
+			text-align: center;
+		}
+		.listed-enticements {
+			li {
+				@include grid-column(3);
+				text-align: justify;
+			}
+		}
+	}
+}
+
+
+.innerpage-banner {
+	background: 
+    /* top, transparent teal */ 
+    linear-gradient(
+      rgba(0, 128, 128, 0.35), 
+      rgba(0, 128, 128, 0.45)
+    ),
+    /* bottom, image */
+    url(http://flexhub.ampnetmedia.com/api/org-websites/wp-content/uploads/sites/2/2014/07/org-websites-flag-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: lighten(teal, 3%);
+	color: #fff;
+	padding: 4em 0.5em;
+	.page-heading {
+		@include grid-column(12);
+		color: inherit;
+		text-align: center;
+		text-shadow: 1px 2px 8px #333;
+		.glyphicon {
+			color: lighten(teal, 15%);
+			text-shadow: 1px 2px 8px #333;
+		}
+	}
+	.slogan {
+		color: inherit;
+		letter-spacing: 1.1px;
+		text-align: center;
+		font-size: 1.4em;
+		font-weight: 100;
+		text-shadow: 1px 2px 8px #333;
+		max-width: 16em;
+		margin: 0 auto;
+		display: block;
+	}
+}
+@media #{$medium-up} {
+	.home-banner {
+		padding: 10em 2em;
+	}
+}
+
+/* url(http://ak6.picdn.net/shutterstock/videos/2884471/preview/stock-footage-brightly-colored-rocks-seen-through-the-crystal-clear-waters-of-kintla-lake-in-glacier-national.jpg); */

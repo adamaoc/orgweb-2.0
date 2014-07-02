@@ -1,0 +1,84 @@
+
+.social-list {
+	@include grid-row();
+	margin: 0 auto 2em;
+	list-style: none;
+	.social-listed {
+		@include grid-column(2);
+		max-height: 4em;
+		&:first-child {
+			@include grid-column($columns:2, $offset:3);
+		}
+		span {
+			display: none;
+		}
+	}
+}
+.social-list-left {
+	@include grid-row();
+	margin: 0 0 2em;
+	list-style: none;
+	.social-listed {
+		@include grid-column(2);
+		max-height: 4em;
+		span {
+			display: none;
+		}
+	}
+}
+
+#gplus {
+  path {
+    fill: #D73D32;
+  }
+}
+#facebook {
+  path {
+    fill: #4C66A4;
+  }
+}
+#flickr {
+  path {
+    fill: #FF0084;
+  }
+}
+#pinterest {
+  path {
+    fill: #D11015;
+  }
+}
+#twitter {
+  path {
+    fill: #55ACEE;
+  }
+}
+#tumblr {
+  path {
+    fill: #3E5A70;
+  }
+}
+#linkedin {
+  path {
+    fill: #046399;
+  }
+}
+#instagram {
+  path {
+    fill: #634D3F;
+  }
+}
+#feed {
+  path {
+    fill: #FF7F00;
+  }
+}
+#wordpress {
+  path {
+    fill: #22769B;
+  }
+}
+#github {
+  path {
+    fill: #333;
+  }
+}
