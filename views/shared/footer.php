@@ -1,3 +1,4 @@
+
 <footer class="sitefooter">
 	<div class="row">
 		<nav class="footer-nav small-12 columns">
@@ -10,5 +11,42 @@
 </footer>
     <script src="<?= ASSETS ?>js/base.min.js"></script>
     <script src="<?= ASSETS ?>js/app.js"></script>
+
+
+<script>
+$('#contactform')
+	.on('invalid.fndtn.abide', function () {
+    var invalid_fields = $(this).find('[data-invalid]');
+    $('.errormessage').append("<p><em>Sorry there was an error. Please Try again.</em></p>");
+});
+	
+$('#contactform').on('valid.fndtn.abide', function() {
+  // Handle the submission of the form
+  	var that = $(this),
+		url = that.attr('action'),
+		method = that.attr('method'),
+		errorcount = 0,
+		data = {};
+	
+	that.find('[name]').each(function(index, value) {
+		var that = $(this),
+			name = that.attr('name'),
+			value = that.val();
+
+		data[name] = value;
+	});
+
+	$.ajax({
+		url: url,
+		type: method,
+		data: data,
+		success: function(response) {
+			that.hide();
+			$('.success').show();
+		}
+	});
+});	
+</script>
+
   </body>
 </html>
