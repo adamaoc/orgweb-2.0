@@ -1,4 +1,7 @@
-<?php ?>
+<?php 
+$pageURL = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
+$currentPage = $pageURL[0];
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -8,6 +11,9 @@
 		<title>ORG-Websites <?= $data['title'] ?> | Websites for non-profit foundations and orginizations.</title>
 
 		<link rel="stylesheet" href="<?= ASSETS ?>css/app.css" />
+		<?php if($currentPage == "styleguide") : ?>
+			<link rel="stylesheet" href="<?= ASSETS ?>css/styleguid.css" />
+		<?php endif; ?>
 		<script src="<?= ASSETS ?>js/modernizr.min.js"></script>
 	</head>
 	<body>

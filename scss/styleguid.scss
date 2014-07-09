@@ -1,0 +1,73 @@
+@import "settings";
+
+.styleguide-wrap {
+	padding: 2em 0;
+}
+
+.basic-icon {
+	text-align: center;
+
+	.glyphicon-tower {
+		font-size: 11em;
+		padding: 0.3em 0.3em 0em 0.3em;
+	}
+	.icon-title {
+		display: block;
+		text-align: center;
+		font-size: 1.5em;
+		padding-bottom: 1em;
+		margin-top: -0.69em;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+}
+
+$logocolor: #fff;
+$bgcolor: $primary-color;
+$shadow: -9px 7px 1px darken($bgcolor, 10%);
+
+.basic-icon.versone {
+	background-color: $bgcolor;
+	.glyphicon-tower {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+	.icon-title {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+}
+$logocolor: $secondary-color;
+$bgcolor: #333;
+$shadow: -9px 7px 1px darken($bgcolor, 10%);
+.basic-icon.verstwo {
+	background-color: $bgcolor;
+	.glyphicon-tower {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+	.icon-title {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+}
+$logocolor: $secondary-color;
+$bgcolor: #eee;
+$shadow: -9px 7px 1px darken($bgcolor, 10%);
+.basic-icon.versthree {
+	background-color: $bgcolor;
+	.glyphicon-tower {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+	.icon-title {
+		color: $logocolor;
+		text-shadow: $shadow;
+	}
+}
+
+.section-header {
+	background-color: #eee;
+	margin: 0.3em -0.5em;
+	padding-left: 0.5em;
+}
