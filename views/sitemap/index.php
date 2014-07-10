@@ -9,7 +9,7 @@
 					<ul>
 						<?php foreach ($page as $internal) : ?>
 							<li>
-								<a href="<?= $internal['url'] ?>/">
+								<a href="/<?= $internal['url'] ?>/">
 									<?= $internal['name'] ?>
 								</a>
 							</li>

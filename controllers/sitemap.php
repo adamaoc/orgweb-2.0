@@ -66,7 +66,7 @@ class Sitemap extends Controller
 
 		foreach ($packages as $slug => $package) {
 			$packagearr[$slug] = array(
-				"url" => "/pricing/package/".$slug,
+				"url" => "pricing/package/".$slug,
 				"name" => $package['name']
 			);
 		}
@@ -86,7 +86,7 @@ class Sitemap extends Controller
 
 		foreach ($works as $slug => $work) {
 			$worksarr[$slug] = array(
-				"url" => "/works/".$slug,
+				"url" => "works/".$slug,
 				"name" => $work['title']
 			);
 		}

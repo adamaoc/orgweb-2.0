@@ -14,7 +14,7 @@ function sitemapBuilder($pages) {
 		if(is_array($page)) {
 			foreach ($page as $internal) {
 				$xmlblock .= "<url>
-						<loc>".$baseurl.$internal['url']."</loc>
+						<loc>".$baseurl.$internal['url']."/</loc>
 						<lastmod>".date('Y-m-d')."</lastmod>
 						<changefreq>monthly</changefreq>
 						<priority>1</priority>
@@ -22,7 +22,7 @@ function sitemapBuilder($pages) {
 			}
 		}else{
 			$xmlblock .= "<url>
-				<loc>".$baseurl.$page."</loc>
+				<loc>".$baseurl.$page."/</loc>
 				<lastmod>".date('Y-m-d')."</lastmod>
 				<changefreq>monthly</changefreq>
 				<priority>1</priority>

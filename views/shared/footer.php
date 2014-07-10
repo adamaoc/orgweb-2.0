@@ -2,7 +2,7 @@
 <footer class="sitefooter">
 	<div class="row">
 		<nav class="footer-nav small-12 columns">
-			<p><a href="#">home</a> | <a href="#">about</a> | <a href="#">contact</a> | <a href="#">pricing</a> | <a href="#">seo</a> | <a href="#">secure</a> | <a href="#">social</a> | <a href="#">flexable</a></p>
+			<p><a href="/">home</a> | <a href="/about/">about</a> | <a href="/contact/">contact</a> | <a href="/pricing/">pricing</a> | <a href="/works/">works</a> | <a href="/builtin/">built in</a> | <a href="/sitemap/">sitemap</a> 
 		</nav>
 		<div class="copy small-12 columns">
 			<p>&copy;2014 All Rights Reserved | ORG-Websites is a product of <a href="http://ampnetmedia.com" class="ampnet">ampnet(media) <span>a web design and development company</span></a>
