@@ -32,5 +32,6 @@ class Pageworks
 		}
 
 		$this->workslistarr = $buildarr;
+		return $buildarr;
 	}
 }
