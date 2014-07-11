@@ -8,6 +8,8 @@ class Home extends Controller
 		$aboutpage = $this->model('Pageabout');
 		$contactpage = $this->model('Pagecontact');
 
+		$pageDesc = strip_tags($aboutpage->excerpt);
+
 		$this->view('home/index', array(
 			'sitename' => $site->sitename,
 			'slogan' => $site->slogan,
@@ -16,7 +18,8 @@ class Home extends Controller
 			'contactPhone' => $site->contactPhone,
 			'contacttitle' => $contactpage->pageTitle,
 			'contactcontent' => $contactpage->ContactContent,
-			'sociallinks' => $site->sociallinks
+			'sociallinks' => $site->sociallinks,
+			'pageDesc' => $pageDesc
 		));
 	}
 }

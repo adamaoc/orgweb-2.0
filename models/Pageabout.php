@@ -12,6 +12,7 @@ class Pageabout
 		$this->setAPI();
 		$this->setTitle();
 		$this->content = $this->setContent();
+		$this->excerpt = $this->setExcerpt();
 	}
 
 	public function setAPI() {
@@ -29,5 +30,9 @@ class Pageabout
 	public function setContent() {
 		$content = $this->data->page->content;
 		return $content;
+	}
+	public function setExcerpt() {
+		$excerpt = $this->data->page->excerpt;
+		return $excerpt;
 	}
 }

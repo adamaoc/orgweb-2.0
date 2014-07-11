@@ -10,12 +10,20 @@ $currentPage = $pageURL[0];
 		
 		<title>ORG-Websites <?= $data['title'] ?> | Websites for non-profit foundations and orginizations.</title>
 
-		<meta name="google-site-verification" content="GWEBMASTER" />
-		
+		<meta name="description" content="<?= $data['pageDesc'] ?>">
+
+		<meta name="author" content="ampnetmedia.com">
+
+		<meta name="google-site-verification" content="<?= GWEBMASTER ?>" />
+
+		<link rel="shortcut icon" href="<?= ASSETS ?>/images/favicon.ico">
+
 		<link rel="stylesheet" href="<?= ASSETS ?>css/app.css" />
+		
 		<?php if($currentPage == "styleguide") : ?>
 			<link rel="stylesheet" href="<?= ASSETS ?>css/styleguid.css" />
 		<?php endif; ?>
+
 		<script src="<?= ASSETS ?>js/modernizr.min.js"></script>
 	</head>
 	<body>

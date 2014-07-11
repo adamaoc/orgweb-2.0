@@ -6,6 +6,7 @@ class About extends Controller
 	{
 		$site = $this->model('Site');
 		$page = $this->model('Pageabout');
+		$pageDesc = strip_tags($page->content)." Serving nonprofits";
 
 		$this->view('about/index', array(
 			'sitename' => $site->sitename,
@@ -13,7 +14,8 @@ class About extends Controller
 			'title' => 'About ORG-Websites',
 			'pageTitle' => $page->pageTitle,
 			'content' => $page->content,
-			'sociallinks' => $site->sociallinks
+			'sociallinks' => $site->sociallinks,
+			'pageDesc' => $pageDesc
 		));
 	}
 }

@@ -7,6 +7,7 @@ class Pagesingle
 	public $pageContent = "";
 	public $pageTechs = "";
 	public $galleryPics = "";
+	public $pageExcerpt = "";
 
 	public function getPost($slug)
 	{
@@ -25,6 +26,7 @@ class Pagesingle
 			$this->pageImage = $data->post->thumbnail_images->medium->url;
 			$this->pageTechs = $data->post->tags;
 			$this->galleryPics = $data->post->attachments;
+			$this->pageExcerpt = $data->post->excerpt;
 		}
 		
 	}

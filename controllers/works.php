@@ -14,6 +14,9 @@ class Works extends Controller
 		}
 		else
 		{
+
+			$pageDesc = "Check out some of the work we've done for nonprofits around the US built on our FlexHub platform.";
+
 			$this->view('works/index', array(
 				'sitename' => $site->sitename,
 				'slogan' => $page->pageSlogan,
@@ -21,7 +24,8 @@ class Works extends Controller
 				'pageContent' => $page->pageContent,
 				'title' => 'Portfolio for ORG-Websites',
 				'sociallinks' => $site->sociallinks,
-				'workslist' => $page->workslistarr
+				'workslist' => $page->workslistarr,
+				'pageDesc' => $pageDesc
 			));
 		}
 	}
@@ -31,13 +35,16 @@ class Works extends Controller
 		$site = $this->model('Site');
 		$single = $this->model('Pagesingle');
 		$post = $single->getPost($work);
+		$pageDesc = strip_tags($single->pageExcerpt);
+
 		$this->view('works/single-work', array(
 			'title' => $single->pageTitle,
 			'pageTitle' => $single->pageTitle,
 			'pageContent' => $single->pageContent,
 			'pageImage' => $single->pageImage,
 			'techs' => $single->pageTechs,
-			'galleryPics' => $single->galleryPics
+			'galleryPics' => $single->galleryPics,
+			'pageDesc' => $pageDesc
 		));
 	}
 }

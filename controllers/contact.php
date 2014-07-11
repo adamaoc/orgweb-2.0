@@ -7,6 +7,7 @@ class Contact extends Controller
 		$site = $this->model('Site');
 		$page = $this->model('Pagecontact');
 		$aboutpage = $this->model('Pageabout');
+		$pageDesc = "(214) 702-6752".strip_tags($page->ContactContent);
 
 		$this->view('contact/index', array(
 			'sitename' => $site->sitename,
@@ -16,7 +17,8 @@ class Contact extends Controller
 			'pageTitle' => $page->pageTitle,
 			'contactContent' => $page->ContactContent,
 			'aboutContent' => $aboutpage->content,
-			'sociallinks' => $site->sociallinks
+			'sociallinks' => $site->sociallinks,
+			'pageDesc' => $pageDesc
 		));
 	}
 
